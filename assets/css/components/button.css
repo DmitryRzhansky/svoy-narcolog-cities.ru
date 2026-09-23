@@ -46,8 +46,19 @@
   transition: background-color var(--transition-base);
 }
 
-.button--hero:hover .button__arrow {
+.button__arrow .icon {
+  transform: rotate(-45deg);
+  transition: transform var(--transition-base);
+}
+
+.button--hero:hover .button__arrow,
+.button--hero:focus-visible .button__arrow {
   background: var(--color-accent-hover);
+}
+
+.button--hero:hover .button__arrow .icon,
+.button--hero:focus-visible .button__arrow .icon {
+  transform: rotate(0deg);
 }
 
 @media (min-width: 48rem) {
@@ -61,5 +72,11 @@
   .button__arrow {
     width: 3.75rem;
     height: 3.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button__arrow .icon {
+    transition: none;
   }
 }
