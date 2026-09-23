@@ -1,0 +1,24 @@
+:root {
+  --color-accent: #e10613;
+  --color-accent-hover: #c10510;
+  --color-brand: #49c0e6;
+  --color-hero: #2f86b0;
+  --color-hero-glow: rgba(73, 192, 230, 0.55);
+  --color-text: #173a51;
+  --color-text-inverse: #ffffff;
+  --color-surface: #ffffff;
+  --color-glass: rgba(255, 255, 255, 0.1);
+  --color-glass-strong: rgba(255, 255, 255, 0.16);
+
+  --font-main: "Manrope", Arial, sans-serif;
+
+  --container-width: 86rem;
+  --radius-pill: 999px;
+  --radius-lg: 2.75rem;
+  --radius-md: 1.25rem;
+  --radius-sm: 0.85rem;
+
+  --transition-base: 0.2s ease;
+  --z-header: 40;
+  --z-overlay: 30;
+}
