@@ -205,11 +205,12 @@
     display: block;
     position: absolute;
     z-index: 0;
-    right: 0;
-    bottom: 5.5rem;
+    left: 50%;
+    bottom: 0;
     width: auto;
-    height: min(34rem, 78%);
+    height: 100%;
     max-width: none;
+    transform: translateX(-42%);
     object-fit: contain;
     object-position: bottom center;
     pointer-events: none;
