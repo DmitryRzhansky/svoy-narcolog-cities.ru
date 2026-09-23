@@ -42,6 +42,11 @@
   mask-image: url("../../icons/arrow-right.svg");
 }
 
+.icon--arrow-up {
+  -webkit-mask-image: url("../../icons/arrow-up-right.svg");
+  mask-image: url("../../icons/arrow-up-right.svg");
+}
+
 .icon--user {
   -webkit-mask-image: url("../../icons/user.svg");
   mask-image: url("../../icons/user.svg");
