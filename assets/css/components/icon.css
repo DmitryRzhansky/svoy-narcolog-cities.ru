@@ -22,6 +22,11 @@
   mask-image: url("../../icons/house.svg");
 }
 
+.icon--hospital {
+  -webkit-mask-image: url("../../icons/hospital.svg");
+  mask-image: url("../../icons/hospital.svg");
+}
+
 .icon--ambulance {
   -webkit-mask-image: url("../../icons/ambulance.svg");
   mask-image: url("../../icons/ambulance.svg");
