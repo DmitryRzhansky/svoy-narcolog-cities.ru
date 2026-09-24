@@ -249,160 +249,269 @@
       </section>
 
       <section class="about" aria-labelledby="about-title">
-        <h2 class="about__title" id="about-title">О <span class="title-accent">компании</span></h2>
+        <h2 class="about__title" id="about-title">
+          О <span class="title-accent">компании</span>
+        </h2>
 
-        <div class="about__grid">
-          <article class="about-card about-card--light about__card about__card--visit">
-            <span class="about-card__title">
-              <span class="icon icon--house about-card__icon" aria-hidden="true"></span>
-              Удобно обратиться
-            </span>
-            <p class="about-card__text">Выезд по Иванову и области: врач приезжает на дом, и помощь можно получить без поездки в клинику.</p>
-          </article>
-
-          <article class="about-card about__card about__card--private">
-            <span class="about-card__title">
-              <span class="icon icon--shield about-card__icon" aria-hidden="true"></span>
-              Анонимный приём
-            </span>
-            <p class="about-card__text">Без постановки на учёт. Осмотр и лечение проходят конфиденциально — дома или в клинике.</p>
-          </article>
-
-          <div class="about-slider" data-slider>
-            <div class="about-slider__frame">
+        <div class="about__layout">
+          <div class="about__media">
+            <figure class="about__photo about__photo--main">
               <img
-                class="about-slider__image about-slider__image--active"
-                src="assets/images/clinic/clinic-02.webp"
-                alt="Холл клиники с диваном и стойкой регистрации"
-                width="768"
-                height="1024"
+                src="assets/images/about/lobby.webp"
+                alt="Современный холл частной клиники"
+                width="1280"
+                height="720"
                 loading="lazy"
                 decoding="async"
-                data-slider-slide
               >
-              <img
-                class="about-slider__image"
-                src="assets/images/clinic/clinic-01.webp"
-                alt="Сотрудница клиники оформляет документы за рабочим столом"
-                width="768"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-                data-slider-slide
-                aria-hidden="true"
-              >
-              <img
-                class="about-slider__image"
-                src="assets/images/clinic/clinic-03.webp"
-                alt="Врач консультирует пациентку в кабинете"
-                width="768"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-                data-slider-slide
-                aria-hidden="true"
-              >
-              <img
-                class="about-slider__image"
-                src="assets/images/clinic/clinic-04.webp"
-                alt="Процедурный кабинет со шкафом для медикаментов"
-                width="768"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-                data-slider-slide
-                aria-hidden="true"
-              >
-              <img
-                class="about-slider__image"
-                src="assets/images/clinic/clinic-05.webp"
-                alt="Аппарат лазерной терапии в клинике"
-                width="768"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-                data-slider-slide
-                aria-hidden="true"
-              >
-              <img
-                class="about-slider__image"
-                src="assets/images/clinic/clinic-06.webp"
-                alt="Стойка с капельницами в палате"
-                width="768"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-                data-slider-slide
-                aria-hidden="true"
-              >
-              <img
-                class="about-slider__image"
-                src="assets/images/clinic/clinic-07.webp"
-                alt="Пульсоксиметр на пальце во время осмотра"
-                width="768"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-                data-slider-slide
-                aria-hidden="true"
-              >
-              <img
-                class="about-slider__image"
-                src="assets/images/clinic/clinic-08.webp"
-                alt="Палата стационара с кроватью"
-                width="768"
-                height="1024"
-                loading="lazy"
-                decoding="async"
-                data-slider-slide
-                aria-hidden="true"
-              >
+            </figure>
+            <div class="about__photos">
+              <figure class="about__photo">
+                <img
+                  src="assets/images/about/doctor.webp"
+                  alt="Врач-нарколог клиники «Свой нарколог»"
+                  width="1152"
+                  height="864"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </figure>
+              <figure class="about__photo">
+                <img
+                  src="assets/images/about/ward.webp"
+                  alt="Палата для восстановления в клинике"
+                  width="1152"
+                  height="864"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </figure>
             </div>
-            <button class="slider-nav slider-nav--prev about-slider__nav about-slider__nav--prev" type="button" data-slider-prev aria-label="Предыдущее фото">
-              <span class="icon icon--arrow" aria-hidden="true"></span>
-            </button>
-            <button class="slider-nav slider-nav--next about-slider__nav about-slider__nav--next" type="button" data-slider-next aria-label="Следующее фото">
-              <span class="icon icon--arrow" aria-hidden="true"></span>
-            </button>
-            <p class="visually-hidden" data-slider-status aria-live="polite"></p>
           </div>
 
-          <figure class="about__photo">
-            <img
-              src="assets/images/clinic/team.jpg"
-              alt="Команда клиники «Свой нарколог»"
-              width="1024"
-              height="863"
-              loading="lazy"
-              decoding="async"
-            >
-          </figure>
-
-          <article class="about-card about__card about__card--license">
-            <span class="about-card__title">
-              <span class="icon icon--certificate about-card__icon" aria-hidden="true"></span>
-              Лицензированная помощь
-            </span>
-            <p class="about-card__text">Сертифицированные препараты, осмотр на месте и план восстановления после процедуры.</p>
-          </article>
-
-          <article class="about-card about__card about__card--follow">
-            <span class="about-card__title">
-              <span class="icon icon--heart about-card__icon" aria-hidden="true"></span>
-              Больше, чем один визит
-            </span>
-            <p class="about-card__text">После процедуры врач остаётся на связи и при необходимости корректирует лечение.</p>
-          </article>
-
-          <div class="about__more">
-            <a class="button button--hero about__more-cta" href="/o-nas/">
-              <span>Читать далее о нас</span>
+          <div class="about__content">
+            <p class="about__lead">
+              «Свой нарколог» — частная клиника в Иваново. Помогаем выйти из запоя,
+              снять интоксикацию и начать восстановление — дома или в стационаре.
+            </p>
+            <p class="about__text">
+              Работаем круглосуточно, анонимно и по лицензии. Врач приезжает на дом
+              или принимает в клинике — формат выбираем по состоянию пациента.
+            </p>
+            <figure class="about__photo about__photo--panel">
+              <img
+                src="assets/images/about/drip.webp"
+                alt="Капельница в процедурном кабинете"
+                width="1280"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              >
+            </figure>
+            <a class="button button--hero about__cta" href="/o-nas/">
+              <span>Подробнее о нас</span>
               <span class="button__arrow">
                 <span class="icon icon--arrow" aria-hidden="true"></span>
               </span>
             </a>
           </div>
         </div>
+      </section>
+
+      <section class="gallery" aria-labelledby="clinic-photos-title">
+        <h2 class="gallery__title" id="clinic-photos-title">
+          Фотографии <span class="title-accent">нашей клиники</span>
+        </h2>
+        <ul class="gallery__grid">
+          <li>
+            <button
+              class="gallery__item"
+              type="button"
+              data-lightbox-open
+              data-lightbox-src="assets/images/clinic/clinic-02.webp"
+              data-lightbox-alt="Холл клиники с диваном и стойкой регистрации"
+              data-lightbox-caption="Холл клиники с диваном и стойкой регистрации"
+              aria-label="Открыть фото: Холл клиники с диваном и стойкой регистрации"
+            >
+              <img
+                class="gallery__image"
+                src="assets/images/clinic/clinic-02.webp"
+                alt="Холл клиники с диваном и стойкой регистрации"
+                width="1024"
+                height="768"
+                loading="lazy"
+                decoding="async"
+              >
+            </button>
+          </li>
+          <li>
+            <button
+              class="gallery__item"
+              type="button"
+              data-lightbox-open
+              data-lightbox-src="assets/images/clinic/clinic-01.webp"
+              data-lightbox-alt="Сотрудница клиники оформляет документы за рабочим столом"
+              data-lightbox-caption="Сотрудница клиники оформляет документы за рабочим столом"
+              aria-label="Открыть фото: Сотрудница клиники оформляет документы за рабочим столом"
+            >
+              <img
+                class="gallery__image"
+                src="assets/images/clinic/clinic-01.webp"
+                alt="Сотрудница клиники оформляет документы за рабочим столом"
+                width="1024"
+                height="768"
+                loading="lazy"
+                decoding="async"
+              >
+            </button>
+          </li>
+          <li>
+            <button
+              class="gallery__item"
+              type="button"
+              data-lightbox-open
+              data-lightbox-src="assets/images/clinic/clinic-03.webp"
+              data-lightbox-alt="Врач консультирует пациентку в кабинете"
+              data-lightbox-caption="Врач консультирует пациентку в кабинете"
+              aria-label="Открыть фото: Врач консультирует пациентку в кабинете"
+            >
+              <img
+                class="gallery__image"
+                src="assets/images/clinic/clinic-03.webp"
+                alt="Врач консультирует пациентку в кабинете"
+                width="1024"
+                height="768"
+                loading="lazy"
+                decoding="async"
+              >
+            </button>
+          </li>
+          <li>
+            <button
+              class="gallery__item"
+              type="button"
+              data-lightbox-open
+              data-lightbox-src="assets/images/clinic/clinic-04.webp"
+              data-lightbox-alt="Процедурный кабинет со шкафом для медикаментов"
+              data-lightbox-caption="Процедурный кабинет со шкафом для медикаментов"
+              aria-label="Открыть фото: Процедурный кабинет со шкафом для медикаментов"
+            >
+              <img
+                class="gallery__image"
+                src="assets/images/clinic/clinic-04.webp"
+                alt="Процедурный кабинет со шкафом для медикаментов"
+                width="1024"
+                height="768"
+                loading="lazy"
+                decoding="async"
+              >
+            </button>
+          </li>
+          <li>
+            <button
+              class="gallery__item"
+              type="button"
+              data-lightbox-open
+              data-lightbox-src="assets/images/clinic/clinic-06.webp"
+              data-lightbox-alt="Стойка с капельницами в палате"
+              data-lightbox-caption="Стойка с капельницами в палате"
+              aria-label="Открыть фото: Стойка с капельницами в палате"
+            >
+              <img
+                class="gallery__image"
+                src="assets/images/clinic/clinic-06.webp"
+                alt="Стойка с капельницами в палате"
+                width="1024"
+                height="768"
+                loading="lazy"
+                decoding="async"
+              >
+            </button>
+          </li>
+          <li>
+            <button
+              class="gallery__item"
+              type="button"
+              data-lightbox-open
+              data-lightbox-src="assets/images/clinic/clinic-08.webp"
+              data-lightbox-alt="Палата стационара с кроватью"
+              data-lightbox-caption="Палата стационара с кроватью"
+              aria-label="Открыть фото: Палата стационара с кроватью"
+            >
+              <img
+                class="gallery__image"
+                src="assets/images/clinic/clinic-08.webp"
+                alt="Палата стационара с кроватью"
+                width="1024"
+                height="768"
+                loading="lazy"
+                decoding="async"
+              >
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="advantages" aria-labelledby="advantages-title">
+        <h2 class="advantages__title" id="advantages-title">
+          Наши <span class="title-accent">преимущества</span>
+        </h2>
+        <ul class="advantages__list">
+          <li>
+            <article class="advantage">
+              <span class="icon icon--shield advantage__icon" aria-hidden="true"></span>
+              <span class="advantage__title">Полная анонимность</span>
+              <p class="advantage__text">
+                Без постановки на учёт. Данные пациента не передаём третьим лицам.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="advantage">
+              <span class="icon icon--ambulance advantage__icon" aria-hidden="true"></span>
+              <span class="advantage__title">Выезд 24/7</span>
+              <p class="advantage__text">
+                Бригада выезжает по Иваново и области в любое время суток, включая праздники.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="advantage">
+              <span class="icon icon--stethoscope advantage__icon" aria-hidden="true"></span>
+              <span class="advantage__title">Врачи с опытом от 10 лет</span>
+              <p class="advantage__text">
+                Психиатры-наркологи, фельдшеры и медсёстры с практикой экстренной помощи.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="advantage">
+              <span class="icon icon--certificate advantage__icon" aria-hidden="true"></span>
+              <span class="advantage__title">Лицензированная клиника</span>
+              <p class="advantage__text">
+                Работаем официально. Лицензию и документы можно проверить в открытом реестре.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="advantage">
+              <span class="icon icon--house advantage__icon" aria-hidden="true"></span>
+              <span class="advantage__title">Дом или стационар</span>
+              <p class="advantage__text">
+                Помощь на адресе пациента или в клинике — формат выбираем по состоянию.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="advantage">
+              <span class="icon icon--heart advantage__icon" aria-hidden="true"></span>
+              <span class="advantage__title">Поддержка после визита</span>
+              <p class="advantage__text">
+                Оставляем рекомендации и остаёмся на связи, если нужно скорректировать лечение.
+              </p>
+            </article>
+          </li>
+        </ul>
       </section>
 
       <section class="licenses" aria-labelledby="licenses-title">
