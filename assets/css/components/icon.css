@@ -138,3 +138,13 @@
   -webkit-mask-image: url("../../icons/clock-countdown.svg");
   mask-image: url("../../icons/clock-countdown.svg");
 }
+
+.icon--plus {
+  -webkit-mask-image: url("../../icons/plus.svg");
+  mask-image: url("../../icons/plus.svg");
+}
+
+.icon--minus {
+  -webkit-mask-image: url("../../icons/minus.svg");
+  mask-image: url("../../icons/minus.svg");
+}
