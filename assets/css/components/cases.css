@@ -7,7 +7,7 @@
 .cases__header {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 0.85rem 1rem;
   margin: 0 0 1.35rem;
@@ -24,8 +24,9 @@
 }
 
 .cases__controls {
-  display: none;
+  display: flex;
   gap: 0.55rem;
+  flex: 0 0 auto;
   margin-left: auto;
 }
 
@@ -189,6 +190,7 @@
 }
 
 .cases__nav.slider-nav {
+  display: none;
   background: #ffffff;
   color: var(--color-text);
   box-shadow: 0 6px 22px rgba(8, 20, 30, 0.4);
@@ -206,10 +208,6 @@
 }
 
 @media (min-width: 48rem) {
-  .cases__controls {
-    display: flex;
-  }
-
   .case-card {
     grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.9fr);
     grid-template-rows: 22rem;
@@ -268,7 +266,7 @@
     display: none;
   }
 
-  .cases__nav {
+  .cases__nav.slider-nav {
     display: grid;
   }
 
