@@ -158,3 +158,18 @@
   -webkit-mask-image: url("../../icons/minus.svg");
   mask-image: url("../../icons/minus.svg");
 }
+
+.icon--target {
+  -webkit-mask-image: url("../../icons/target.svg");
+  mask-image: url("../../icons/target.svg");
+}
+
+.icon--lightbulb {
+  -webkit-mask-image: url("../../icons/lightbulb.svg");
+  mask-image: url("../../icons/lightbulb.svg");
+}
+
+.icon--check-circle {
+  -webkit-mask-image: url("../../icons/check-circle.svg");
+  mask-image: url("../../icons/check-circle.svg");
+}
