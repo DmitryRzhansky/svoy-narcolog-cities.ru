@@ -5,9 +5,7 @@
 }
 
 .doctors.doctors--page {
-  width: min(calc(100% - 1rem), var(--container-width));
   margin-top: 1.5rem;
-  box-sizing: border-box;
 }
 
 .doctors__breadcrumbs {
@@ -263,10 +261,6 @@
 @media (min-width: 64rem) {
   .doctors {
     width: min(calc(100% - 1.25rem), 90rem);
-  }
-
-  .doctors.doctors--page {
-    width: min(calc(100% - 2rem), var(--container-width));
   }
 
   .doctors__title {
