@@ -152,6 +152,22 @@
   --included-tilt: 4deg;
 }
 
+.included__item--esperal {
+  --included-tilt: -5deg;
+}
+
+.included__item--disulfiram {
+  --included-tilt: 6deg;
+}
+
+.included__item--detox-coding {
+  --included-tilt: -4deg;
+}
+
+.included__item--home-clinic {
+  --included-tilt: 5deg;
+}
+
 .included__lead {
   max-width: 36rem;
   margin: -0.75rem 0 1.5rem;
@@ -181,31 +197,36 @@
 }
 
 .included--composition .included__title,
-.included--capabilities .included__title {
+.included--capabilities .included__title,
+.included--methods .included__title {
   max-width: 16em;
   margin-bottom: 1rem;
 }
 
 .included--composition .included__item,
-.included--capabilities .included__item {
+.included--capabilities .included__item,
+.included--methods .included__item {
   justify-content: flex-start;
   gap: 0.55rem;
   min-height: 0;
 }
 
 .included--composition .included__visual,
-.included--capabilities .included__visual {
+.included--capabilities .included__visual,
+.included--methods .included__visual {
   flex: 0 0 auto;
   min-height: 4.5rem;
 }
 
 .included--composition .included__image,
-.included--capabilities .included__image {
+.included--capabilities .included__image,
+.included--methods .included__image {
   width: min(100%, 5.5rem);
 }
 
 .included--composition .included__body,
-.included--capabilities .included__body {
+.included--capabilities .included__body,
+.included--methods .included__body {
   position: relative;
   z-index: 1;
   display: flex;
@@ -271,23 +292,32 @@
     align-items: stretch;
   }
 
+  .included--methods .included__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
   .included--composition .included__item,
-  .included--capabilities .included__item {
+  .included--capabilities .included__item,
+  .included--methods .included__item {
     min-height: 15rem;
   }
 
   .included--composition .included__item:nth-child(even),
-  .included--capabilities .included__item:nth-child(even) {
+  .included--capabilities .included__item:nth-child(even),
+  .included--methods .included__item:nth-child(even) {
     transform: none;
   }
 
   .included--composition .included__visual,
-  .included--capabilities .included__visual {
+  .included--capabilities .included__visual,
+  .included--methods .included__visual {
     min-height: 6rem;
   }
 
   .included--composition .included__image,
-  .included--capabilities .included__image {
+  .included--capabilities .included__image,
+  .included--methods .included__image {
     width: min(100%, 6.5rem);
   }
 }
@@ -324,23 +354,31 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .included--methods .included__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .included--composition .included__item,
-  .included--capabilities .included__item {
+  .included--capabilities .included__item,
+  .included--methods .included__item {
     min-height: 16.5rem;
   }
 
   .included--composition .included__item:nth-child(even),
-  .included--capabilities .included__item:nth-child(even) {
+  .included--capabilities .included__item:nth-child(even),
+  .included--methods .included__item:nth-child(even) {
     transform: none;
   }
 
   .included--composition .included__image,
-  .included--capabilities .included__image {
+  .included--capabilities .included__image,
+  .included--methods .included__image {
     width: min(100%, 7.25rem);
   }
 
   .included--composition .included__name,
-  .included--capabilities .included__name {
+  .included--capabilities .included__name,
+  .included--methods .included__name {
     font-size: 1.05rem;
   }
 }
