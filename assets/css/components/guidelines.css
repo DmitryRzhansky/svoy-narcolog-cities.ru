@@ -70,6 +70,7 @@
 }
 
 .guideline-card__title {
+  display: block;
   margin: 0;
   max-width: 14ch;
   font-size: clamp(1.05rem, 2.8vw, 1.2rem);

@@ -106,6 +106,7 @@
 }
 
 .case-card__title {
+  display: block;
   margin: 0;
   font-size: clamp(1.1rem, 3.8vw, 1.45rem);
   font-weight: 700;

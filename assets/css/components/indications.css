@@ -69,6 +69,7 @@
 }
 
 .indications-card__title {
+  display: block;
   margin: 0;
   font-size: clamp(1.05rem, 3vw, 1.2rem);
   font-weight: 700;

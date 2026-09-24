@@ -74,6 +74,7 @@
 }
 
 .stages__item-title {
+  display: block;
   margin: 0.2rem 0 0;
   font-size: 1.05rem;
   font-weight: 600;
