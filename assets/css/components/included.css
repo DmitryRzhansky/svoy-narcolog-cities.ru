@@ -104,6 +104,87 @@
   --included-tilt: 7deg;
 }
 
+.included__item--detox {
+  --included-tilt: -5deg;
+}
+
+.included__item--vitamins {
+  --included-tilt: 6deg;
+}
+
+.included__item--electrolytes {
+  --included-tilt: -4deg;
+}
+
+.included__item--liver {
+  --included-tilt: 5deg;
+}
+
+.included__item--stabilize {
+  --included-tilt: -6deg;
+}
+
+.included__item--sedative {
+  --included-tilt: 4deg;
+}
+
+.included__lead {
+  max-width: 36rem;
+  margin: -0.75rem 0 1.5rem;
+  color: rgba(23, 58, 81, 0.72);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.included__text {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: rgba(23, 58, 81, 0.62);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.included__note {
+  margin: 1.25rem 0 0;
+  max-width: 36rem;
+  color: rgba(23, 58, 81, 0.5);
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.included--composition .included__title {
+  max-width: 16em;
+  margin-bottom: 1rem;
+}
+
+.included--composition .included__item {
+  justify-content: flex-start;
+  gap: 0.55rem;
+  min-height: 0;
+}
+
+.included--composition .included__visual {
+  flex: 0 0 auto;
+  min-height: 4.5rem;
+}
+
+.included--composition .included__image {
+  width: min(100%, 5.5rem);
+}
+
+.included--composition .included__body {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: auto;
+}
+
 @media (min-width: 48rem) {
   .included {
     padding-bottom: 1.75rem;
@@ -141,6 +222,40 @@
   .included__name {
     font-size: 1.05rem;
   }
+
+  .included__lead {
+    margin-bottom: 1.75rem;
+    font-size: 1rem;
+  }
+
+  .included__text {
+    font-size: 0.85rem;
+  }
+
+  .included__note {
+    margin-top: 1.5rem;
+  }
+
+  .included--composition .included__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  .included--composition .included__item {
+    min-height: 15rem;
+  }
+
+  .included--composition .included__item:nth-child(even) {
+    transform: none;
+  }
+
+  .included--composition .included__visual {
+    min-height: 6rem;
+  }
+
+  .included--composition .included__image {
+    width: min(100%, 6.5rem);
+  }
 }
 
 @media (min-width: 64rem) {
@@ -168,6 +283,26 @@
 
   .included__name {
     font-size: 1.12rem;
+  }
+
+  .included--composition .included__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .included--composition .included__item {
+    min-height: 16.5rem;
+  }
+
+  .included--composition .included__item:nth-child(even) {
+    transform: none;
+  }
+
+  .included--composition .included__image {
+    width: min(100%, 7.25rem);
+  }
+
+  .included--composition .included__name {
+    font-size: 1.05rem;
   }
 }
 

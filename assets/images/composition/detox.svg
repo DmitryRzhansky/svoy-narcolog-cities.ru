@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="detox-bag" x1="48" y1="28" x2="112" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7ED9F0"/>
+      <stop offset="1" stop-color="#2F86B0"/>
+    </linearGradient>
+  </defs>
+  <rect x="74" y="14" width="12" height="18" rx="3" fill="#49C0E6"/>
+  <path d="M54 42h52c6 0 10 4 10 10v58c0 18-14 30-36 30s-36-12-36-30V52c0-6 4-10 10-10z" fill="url(#detox-bag)"/>
+  <path d="M60 78h40c3 0 5 2 5 5v28c0 12-9 20-25 20s-25-8-25-20V83c0-3 2-5 5-5z" fill="#E8F8FC" opacity=".55"/>
+  <circle cx="72" cy="96" r="3" fill="#E8F8FC" opacity=".8"/>
+  <circle cx="84" cy="104" r="2.2" fill="#E8F8FC" opacity=".7"/>
+  <rect x="76" y="132" width="8" height="14" rx="2" fill="#2F86B0"/>
+  <rect x="72" y="144" width="16" height="6" rx="3" fill="#E10613"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="liver-g" x1="36" y1="40" x2="130" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7ED9F0"/>
+      <stop offset="1" stop-color="#2F86B0"/>
+    </linearGradient>
+  </defs>
+  <path d="M42 58c0-14 12-24 28-24h18c8 0 14 3 20 10 8 9 18 12 28 10 8-1 14 5 12 13-3 14-2 28 6 40 4 6 2 14-5 17-18 8-38 10-56 4-22-7-40-22-47-42-3-8-4-18-4-28z" fill="url(#liver-g)"/>
+  <path d="M68 52c10 2 18 10 22 20 3 8 10 14 18 16" stroke="#E8F8FC" stroke-width="4" stroke-linecap="round" opacity=".45"/>
+  <circle cx="108" cy="96" r="10" fill="#E8F8FC" opacity=".35"/>
+  <path d="M104 96h8M108 92v8" stroke="#2F86B0" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

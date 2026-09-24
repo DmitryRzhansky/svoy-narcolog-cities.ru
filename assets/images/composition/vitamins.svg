@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="vit-a" x1="30" y1="40" x2="90" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7ED9F0"/>
+      <stop offset="1" stop-color="#2F86B0"/>
+    </linearGradient>
+    <linearGradient id="vit-b" x1="70" y1="50" x2="130" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#49C0E6"/>
+      <stop offset="1" stop-color="#173A51"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="62" cy="78" rx="34" ry="18" transform="rotate(-35 62 78)" fill="url(#vit-a)"/>
+  <ellipse cx="62" cy="78" rx="34" ry="18" transform="rotate(-35 62 78)" fill="#E8F8FC" opacity=".28" clip-path="inset(0 50% 0 0)"/>
+  <path d="M48 58c10-7 24-6 34 2" stroke="#E8F8FC" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+  <ellipse cx="104" cy="96" rx="30" ry="16" transform="rotate(28 104 96)" fill="url(#vit-b)"/>
+  <path d="M90 84c8-5 18-4 26 2" stroke="#E8F8FC" stroke-width="2.5" stroke-linecap="round" opacity=".4"/>
+  <circle cx="118" cy="48" r="14" fill="#49C0E6"/>
+  <text x="118" y="54" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700">B</text>
+</svg>
