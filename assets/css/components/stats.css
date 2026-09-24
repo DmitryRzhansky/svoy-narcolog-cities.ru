@@ -1,0 +1,139 @@
+.stats {
+  width: min(calc(100% - 0.75rem), 90rem);
+  margin: var(--section-space) auto;
+  color: var(--color-text);
+}
+
+.stats__header {
+  max-width: 44rem;
+  margin: 0 0 1.35rem;
+}
+
+.stats__title {
+  margin: 0;
+  font-size: clamp(1.65rem, 5.5vw, 2.7rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.stats__lead {
+  margin: 0.85rem 0 0;
+  color: rgba(23, 58, 81, 0.72);
+  font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.stats__panel {
+  margin: 0;
+  padding: 0.35rem;
+  border: 1px solid rgba(23, 58, 81, 0.12);
+  border-radius: 1.35rem;
+  background: #f3fafc;
+  list-style: none;
+}
+
+.stats__item {
+  display: grid;
+  gap: 0.65rem;
+  padding: 1.25rem 1.15rem;
+}
+
+.stats__item + .stats__item {
+  border-top: 1px solid rgba(23, 58, 81, 0.1);
+}
+
+.stats__icon {
+  display: grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  color: var(--color-hero);
+}
+
+.stats__icon .icon {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.stats__value {
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(2rem, 6vw, 2.65rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.stats__label {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.stats__note {
+  margin: 0;
+  color: rgba(23, 58, 81, 0.58);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+@media (min-width: 40rem) {
+  .stats__panel {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+    padding: 0.5rem;
+  }
+
+  .stats__item {
+    padding: 1.35rem 1.25rem;
+  }
+
+  .stats__item:nth-child(odd) {
+    border-right: 1px solid rgba(23, 58, 81, 0.1);
+  }
+
+  .stats__item:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(23, 58, 81, 0.1);
+  }
+
+  .stats__item + .stats__item {
+    border-top: 0;
+  }
+}
+
+@media (min-width: 64rem) {
+  .stats__panel {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 0.65rem 0.35rem;
+  }
+
+  .stats__item {
+    padding: 1.5rem 1.35rem 1.6rem;
+  }
+
+  .stats__item:nth-child(odd),
+  .stats__item:nth-child(-n + 2) {
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  .stats__item + .stats__item {
+    border-left: 1px solid rgba(23, 58, 81, 0.1);
+  }
+
+  .stats__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .stats__icon .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}

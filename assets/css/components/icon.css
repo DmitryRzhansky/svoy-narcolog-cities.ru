@@ -173,3 +173,13 @@
   -webkit-mask-image: url("../../icons/check-circle.svg");
   mask-image: url("../../icons/check-circle.svg");
 }
+
+.icon--timer {
+  -webkit-mask-image: url("../../icons/timer.svg");
+  mask-image: url("../../icons/timer.svg");
+}
+
+.icon--moon-stars {
+  -webkit-mask-image: url("../../icons/moon-stars.svg");
+  mask-image: url("../../icons/moon-stars.svg");
+}
