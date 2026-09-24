@@ -334,6 +334,8 @@ a.hero__meta-value:hover {
 }
 
 .doctor-card__name {
+  display: block;
+  margin: 0;
   font-size: 1.05rem;
   font-weight: 300;
   line-height: 1.2;
