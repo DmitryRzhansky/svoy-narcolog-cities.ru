@@ -218,28 +218,12 @@
   line-height: 1.35;
 }
 
-.about-page__links {
-  display: grid;
-  gap: 0.75rem;
-  margin: 0;
-}
-
-.about-page__link {
-  justify-content: space-between;
-  width: 100%;
-  min-height: 3.5rem;
-}
-
 @media (min-width: 40rem) {
   .about-page__points {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .about-page__facts {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .about-page__links {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -277,11 +261,6 @@
   .about-point {
     padding: 1.25rem 1.2rem 1.35rem;
     border-radius: 1.35rem;
-  }
-
-  .about-page__links {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
   }
 }
 
