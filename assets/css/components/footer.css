@@ -45,6 +45,7 @@
   width: 2.35rem;
   height: 2.7rem;
   flex: 0 0 auto;
+  object-fit: contain;
 }
 
 .footer__logo-text {

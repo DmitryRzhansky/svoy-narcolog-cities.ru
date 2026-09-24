@@ -102,6 +102,7 @@
 .header__mark {
   width: 2.15rem;
   height: 2.45rem;
+  object-fit: contain;
 }
 
 .header__logo-text {
