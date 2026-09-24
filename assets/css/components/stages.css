@@ -4,7 +4,7 @@
   --stages-soft: rgba(23, 58, 81, 0.72);
 
   width: min(calc(100% - 0.75rem), 90rem);
-  margin: 2.5rem auto 1.25rem;
+  margin: var(--section-space) auto;
   padding: 1.5rem 1.15rem 1.75rem;
   border-radius: 1.35rem;
   background: #f3fafc;
@@ -105,7 +105,6 @@
 @media (min-width: 64rem) {
   .stages {
     width: min(calc(100% - 1.25rem), 90rem);
-    margin-top: 2.75rem;
     padding: 2rem 1.85rem 2.25rem;
     border-radius: 1.5rem;
   }

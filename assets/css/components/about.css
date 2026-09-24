@@ -3,7 +3,7 @@
   --about-card: #154864;
 
   width: min(calc(100% - 0.75rem), 90rem);
-  margin: 1.5rem auto 0.75rem;
+  margin: var(--section-space) auto;
   color: var(--about-ink);
 }
 

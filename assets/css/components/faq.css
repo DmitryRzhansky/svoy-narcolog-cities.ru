@@ -5,7 +5,7 @@
   --faq-duration: 0.35s;
 
   width: min(calc(100% - 0.75rem), 90rem);
-  margin: 2.5rem auto 1.5rem;
+  margin: var(--section-space) auto;
   color: var(--color-text);
 }
 
@@ -225,7 +225,6 @@
 @media (min-width: 64rem) {
   .faq {
     width: min(calc(100% - 1.25rem), 90rem);
-    margin-top: 2.75rem;
   }
 
   .faq__title {

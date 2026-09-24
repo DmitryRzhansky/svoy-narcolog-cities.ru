@@ -2,7 +2,7 @@
   --licenses-panel: #eef6fa;
 
   width: min(calc(100% - 0.75rem), 90rem);
-  margin: 2.25rem auto 1.25rem;
+  margin: var(--section-space) auto;
   color: var(--color-text);
 }
 

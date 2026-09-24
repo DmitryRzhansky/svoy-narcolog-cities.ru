@@ -1,6 +1,6 @@
 .consult-banner {
   width: min(calc(100% - 0.75rem), 90rem);
-  margin: 0 auto 2.5rem;
+  margin: var(--section-space) auto;
   color: var(--color-text);
 }
 
@@ -306,7 +306,6 @@ body.modal-open {
 @media (min-width: 64rem) {
   .consult-banner {
     width: min(calc(100% - 1.25rem), 90rem);
-    margin-bottom: 3rem;
   }
 
   .consult-banner__card {

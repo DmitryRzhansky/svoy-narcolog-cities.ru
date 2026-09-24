@@ -1,6 +1,6 @@
 .services {
   width: min(calc(100% - 0.75rem), 90rem);
-  margin: 2.5rem auto 0.75rem;
+  margin: var(--section-space) auto;
   color: var(--color-text);
 }
 

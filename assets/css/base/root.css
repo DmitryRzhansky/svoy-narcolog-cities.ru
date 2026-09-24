@@ -13,6 +13,7 @@
   --font-main: "Manrope", Arial, sans-serif;
 
   --container-width: 86rem;
+  --section-space: 4rem;
   --radius-pill: 999px;
   --radius-lg: 2.75rem;
   --radius-md: 1.25rem;
@@ -21,4 +22,10 @@
   --transition-base: 0.2s ease;
   --z-header: 40;
   --z-overlay: 30;
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --section-space: 5.5rem;
+  }
 }

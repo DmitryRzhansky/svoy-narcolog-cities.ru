@@ -2,7 +2,7 @@
   --guidelines-muted: rgba(23, 58, 81, 0.5);
 
   width: min(calc(100% - 0.75rem), 90rem);
-  margin: 2.25rem auto 1.25rem;
+  margin: var(--section-space) auto;
   color: var(--color-text);
 }
 
@@ -161,7 +161,6 @@
 @media (min-width: 64rem) {
   .guidelines {
     width: min(calc(100% - 1.25rem), 90rem);
-    margin-top: 2.5rem;
   }
 
   .guidelines__layout {
