@@ -7,6 +7,11 @@ export function initHeaderScroll() {
     return;
   }
 
+  if (header.hasAttribute("data-header-scrolled")) {
+    header.classList.add("header--scrolled");
+    return;
+  }
+
   const updateScrolledState = () => {
     const isScrolled = window.scrollY > SCROLL_THRESHOLD;
     header.classList.toggle("header--scrolled", isScrolled);
