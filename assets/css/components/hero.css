@@ -34,6 +34,10 @@
   color: var(--color-text-inverse);
 }
 
+.hero__title .title-accent {
+  color: #f23b44;
+}
+
 .hero__lead {
   max-width: 28rem;
   color: var(--color-text-inverse);
