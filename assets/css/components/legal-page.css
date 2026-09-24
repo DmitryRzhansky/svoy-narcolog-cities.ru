@@ -1,0 +1,128 @@
+.legal-page {
+  width: min(calc(100% - 0.75rem), 90rem);
+  margin: 1.5rem auto var(--section-space);
+  color: var(--color-text);
+}
+
+.legal-page__breadcrumbs {
+  margin: 0 0 0.85rem;
+}
+
+.legal-page__breadcrumbs-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: rgba(23, 58, 81, 0.62);
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.legal-page__breadcrumbs-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legal-page__breadcrumbs-item:not(:last-child)::after {
+  content: ">";
+  opacity: 0.7;
+}
+
+.legal-page__breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.legal-page__breadcrumbs-link:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.legal-page__breadcrumbs-link:focus-visible {
+  outline: 0.1875rem solid var(--color-accent);
+  outline-offset: 0.15rem;
+}
+
+.legal-page__breadcrumbs-current {
+  color: var(--color-text);
+}
+
+.legal-page__title {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.65rem, 5.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.legal-page__updated {
+  margin: 0 0 1.75rem;
+  color: rgba(23, 58, 81, 0.58);
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.legal-page__content {
+  max-width: 48rem;
+}
+
+.legal-page__content > * + * {
+  margin-top: 1.15rem;
+}
+
+.legal-page__section-title {
+  margin: 1.75rem 0 0;
+  font-size: clamp(1.15rem, 3vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.legal-page__content p,
+.legal-page__content li {
+  color: rgba(23, 58, 81, 0.84);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.legal-page__content p {
+  margin: 0;
+}
+
+.legal-page__list {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.legal-page__list li + li {
+  margin-top: 0.45rem;
+}
+
+.legal-page__content a {
+  color: var(--color-hero);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.legal-page__content a:hover {
+  color: var(--color-accent);
+}
+
+.legal-page__content a:focus-visible {
+  outline: 0.1875rem solid var(--color-accent);
+  outline-offset: 0.15rem;
+}
+
+@media (min-width: 64rem) {
+  .legal-page {
+    width: min(calc(100% - 1.25rem), 90rem);
+  }
+}

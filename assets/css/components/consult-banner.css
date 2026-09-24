@@ -256,6 +256,21 @@
   text-align: center;
 }
 
+.consult-form__disclaimer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.consult-form__disclaimer a:hover {
+  color: var(--color-hero);
+}
+
+.consult-form__disclaimer a:focus-visible {
+  outline: 0.15rem solid var(--color-accent);
+  outline-offset: 0.1rem;
+}
+
 body.modal-open {
   overflow: hidden;
 }
