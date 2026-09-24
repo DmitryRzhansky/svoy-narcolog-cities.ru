@@ -113,3 +113,18 @@
   -webkit-mask-image: url("../../icons/x.svg");
   mask-image: url("../../icons/x.svg");
 }
+
+.icon--chat-text {
+  -webkit-mask-image: url("../../icons/chat-text.svg");
+  mask-image: url("../../icons/chat-text.svg");
+}
+
+.icon--send {
+  -webkit-mask-image: url("../../icons/paper-plane-tilt.svg");
+  mask-image: url("../../icons/paper-plane-tilt.svg");
+}
+
+.icon--clock-countdown {
+  -webkit-mask-image: url("../../icons/clock-countdown.svg");
+  mask-image: url("../../icons/clock-countdown.svg");
+}

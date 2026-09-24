@@ -1,3 +1,4 @@
+import { initConsultModal } from "./modules/consult-modal.js";
 import { initDropdowns } from "./modules/dropdown.js";
 import { initHeaderScroll } from "./modules/header-scroll.js";
 import { initLightbox } from "./modules/lightbox.js";
@@ -14,6 +15,7 @@ function initApp() {
   initPricesTabs();
   initReviewsScroll();
   initLightbox();
+  initConsultModal();
 }
 
 if (document.readyState === "loading") {
