@@ -1,4 +1,5 @@
 import { initDropdowns } from "./modules/dropdown.js";
+import { initLightbox } from "./modules/lightbox.js";
 import { initMenu } from "./modules/menu.js";
 import { initPricesTabs } from "./modules/prices-tabs.js";
 import { initReviewsScroll } from "./modules/reviews-scroll.js";
@@ -10,6 +11,7 @@ function initApp() {
   initSlider();
   initPricesTabs();
   initReviewsScroll();
+  initLightbox();
 }
 
 if (document.readyState === "loading") {

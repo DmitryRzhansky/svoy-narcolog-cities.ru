@@ -77,10 +77,12 @@
   mask-image: url("../../icons/drop.svg");
 }
 
-.icon--aid {
-  -webkit-mask-image: url("../../icons/first-aid-kit.svg");
-  mask-image: url("../../icons/first-aid-kit.svg");
+.icon--search {
+  -webkit-mask-image: url("../../icons/magnifying-glass.svg");
+  mask-image: url("../../icons/magnifying-glass.svg");
 }
+
+
 
 .icon--shield {
   -webkit-mask-image: url("../../icons/shield-check.svg");

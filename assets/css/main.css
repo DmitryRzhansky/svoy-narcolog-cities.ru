@@ -7,7 +7,9 @@
 @import url("./components/header.css");
 @import url("./components/hero.css");
 @import url("./components/about.css");
+@import url("./components/licenses.css");
 @import url("./components/services.css");
 @import url("./components/prices.css");
 @import url("./components/reviews.css");
 @import url("./utilities/visually-hidden.css");
+@import url("./utilities/title-accent.css");
