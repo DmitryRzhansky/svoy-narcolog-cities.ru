@@ -13,6 +13,7 @@
   overflow: hidden;
   border-radius: 1.5rem;
   background:
+    linear-gradient(90deg, rgba(14, 55, 82, 0.55) 0%, rgba(14, 55, 82, 0.2) 42%, transparent 68%),
     radial-gradient(70% 80% at 100% 0%, var(--color-hero-glow), transparent 55%),
     var(--color-hero);
 }
@@ -22,12 +23,14 @@
   z-index: 1;
   max-width: 11em;
   margin: 0;
+  padding-right: 0.25rem;
   color: var(--color-text-inverse);
   font-size: clamp(1.65rem, 6.5vw, 2.4rem);
   font-weight: 700;
   line-height: 1.08;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(8, 40, 62, 0.35);
 }
 
 .place__title .title-accent {
@@ -36,15 +39,17 @@
 
 .place__art {
   position: absolute;
-  right: -1.25rem;
-  bottom: -1.5rem;
+  right: -1rem;
+  top: -0.85rem;
+  bottom: auto;
   z-index: 0;
-  width: min(58%, 14rem);
+  width: min(42%, 10.5rem);
   height: auto;
   aspect-ratio: 1;
   object-fit: contain;
   pointer-events: none;
   user-select: none;
+  opacity: 0.92;
   filter: drop-shadow(0 14px 24px rgba(8, 40, 62, 0.28));
   transform: rotate(8deg);
 }
@@ -144,9 +149,10 @@
   }
 
   .place__art {
-    right: 0.5rem;
-    bottom: -1.8rem;
-    width: min(42%, 17rem);
+    right: 0.75rem;
+    top: -1rem;
+    bottom: auto;
+    width: min(34%, 13.5rem);
   }
 
   .place__cards {
@@ -175,9 +181,10 @@
   }
 
   .place__art {
-    right: 2rem;
-    bottom: -2.2rem;
-    width: 19rem;
+    right: 1.5rem;
+    top: -1.25rem;
+    bottom: auto;
+    width: 15.5rem;
     transform: rotate(6deg);
   }
 
