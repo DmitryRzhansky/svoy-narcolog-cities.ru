@@ -1,8 +1,8 @@
 .hero {
   width: min(calc(100% - 0.75rem), 90rem);
   min-height: calc(100dvh - 0.75rem);
-  margin: -8.35rem auto var(--section-space);
-  padding: 10.35rem 1rem 1.5rem;
+  margin: -9.15rem auto var(--section-space);
+  padding: 11.15rem 1rem 1.5rem;
   overflow: hidden;
   border-radius: 1.75rem;
   background:

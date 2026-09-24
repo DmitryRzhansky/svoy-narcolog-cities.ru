@@ -6,7 +6,7 @@
   align-items: center;
   gap: 0.4rem 1.25rem;
   width: min(calc(100% - 1.75rem), var(--container-width));
-  margin: 1.35rem auto 0;
+  margin: 2rem auto 0;
   padding-inline: 0.35rem;
   color: var(--color-text-inverse);
   font-size: 0.92rem;
