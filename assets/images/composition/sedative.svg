@@ -1,15 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" aria-hidden="true">
   <defs>
-    <linearGradient id="sed-g" x1="48" y1="28" x2="120" y2="132" gradientUnits="userSpaceOnUse">
+    <linearGradient id="sed-g" x1="40" y1="30" x2="120" y2="130" gradientUnits="userSpaceOnUse">
       <stop stop-color="#9AE6F5"/>
       <stop offset="1" stop-color="#2F86B0"/>
     </linearGradient>
+    <mask id="sed-mask" maskUnits="userSpaceOnUse">
+      <rect width="160" height="160" fill="#000"/>
+      <circle cx="76" cy="82" r="50" fill="#fff"/>
+      <circle cx="100" cy="66" r="42" fill="#000"/>
+    </mask>
   </defs>
-  <path
-    fill="url(#sed-g)"
-    d="M98 30c-8.2 2.4-15.6 7-21.4 13.2C66.2 54.4 60 69.2 60 85c0 29.3 23.7 53 53 53 11.4 0 22-3.6 30.6-9.8C135.2 141.6 119.4 150 101 150 68.4 150 42 123.6 42 91c0-24.8 15.4-46 37.2-54.6C84.2 33.8 91 31 98 30z"
-  />
-  <path d="M112 46l3.2 8 8 3.2-8 3.2-3.2 8-3.2-8-8-3.2 8-3.2 3.2-8z" fill="#E8F8FC" opacity=".9"/>
-  <path d="M130 74l2.2 5.4 5.4 2.2-5.4 2.2-2.2 5.4-2.2-5.4-5.4-2.2 5.4-2.2 2.2-5.4z" fill="#E8F8FC" opacity=".55"/>
-  <circle cx="56" cy="72" r="3" fill="#E8F8FC" opacity=".45"/>
+  <circle cx="76" cy="82" r="50" fill="url(#sed-g)" mask="url(#sed-mask)"/>
+  <path d="M118 44l3.4 8.2 8.2 3.4-8.2 3.4-3.4 8.2-3.4-8.2-8.2-3.4 8.2-3.4 3.4-8.2z" fill="#E8F8FC" opacity=".9"/>
+  <path d="M136 72l2.4 5.6 5.6 2.4-5.6 2.4-2.4 5.6-2.4-5.6-5.6-2.4 5.6-2.4 2.4-5.6z" fill="#E8F8FC" opacity=".55"/>
+  <circle cx="48" cy="70" r="3" fill="#49C0E6" opacity=".55"/>
 </svg>
