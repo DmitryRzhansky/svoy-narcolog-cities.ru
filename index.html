@@ -535,6 +535,484 @@
           </li>
         </ul>
       </section>
+
+      <section class="prices" aria-labelledby="prices-title" data-prices>
+        <h2 class="prices__title" id="prices-title">Цены на наши услуги</h2>
+
+        <div class="prices__tabs" role="tablist" aria-label="Категории цен">
+          <button
+            class="prices__tab prices__tab--active"
+            type="button"
+            role="tab"
+            id="prices-tab-home"
+            aria-selected="true"
+            aria-controls="prices-panel-home"
+            data-prices-tab
+          >
+            Вывод из запоя на дому
+          </button>
+          <button
+            class="prices__tab"
+            type="button"
+            role="tab"
+            id="prices-tab-clinic"
+            aria-selected="false"
+            aria-controls="prices-panel-clinic"
+            tabindex="-1"
+            data-prices-tab
+          >
+            Стационарные услуги
+          </button>
+        </div>
+
+        <div
+          class="prices__panel"
+          role="tabpanel"
+          id="prices-panel-home"
+          aria-labelledby="prices-tab-home"
+          data-prices-panel
+        >
+          <div class="prices-table-wrap">
+            <table class="prices-table">
+              <caption class="visually-hidden">Цены на вывод из запоя на дому</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Услуга</th>
+                  <th scope="col">Описание</th>
+                  <th scope="col">Цена</th>
+                  <th scope="col"><span class="visually-hidden">Действие</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-clipboard.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Назначение лечения</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Врач оценивает состояние и составляет план лечения бесплатно.</td>
+                  <td class="prices-table__price prices-table__price--free">Бесплатно</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-home.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Выезд нарколога на дом</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Срочный выезд врача к вам домой в Иваново и области.</td>
+                  <td class="prices-table__price">1 500&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-drip.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Вывод из запоя (стандартная капельница)</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Стандартная капельница для снятия интоксикации и улучшения самочувствия.</td>
+                  <td class="prices-table__price">5 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-coding.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">В/м кодирование 1&nbsp;мес. «Эспераль»</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Внутримышечное кодирование препаратом «Эспераль» сроком на 1 месяц.</td>
+                  <td class="prices-table__price">6 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-drip-double.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Вывод из запоя (двойная капельница)</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Усиленная детоксикация двойной капельницей при более тяжёлом состоянии.</td>
+                  <td class="prices-table__price">8 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-combo.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Вывод из запоя + кодирование на 6&nbsp;месяцев</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Детоксикация и кодирование в/м или в/в с поддержкой на полгода.</td>
+                  <td class="prices-table__price">12 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-drip-strong.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Вывод из запоя — усиленная капельница</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Интенсивная капельница для быстрого облегчения при тяжёлом запое.</td>
+                  <td class="prices-table__price">12 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-transport.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Доставка до стационара</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Диагностика и стабилизация на адресе с доставкой в стационар.</td>
+                  <td class="prices-table__price">15 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-vip.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">VIP-очищение</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Расширенная программа очищения организма премиум-уровня на дому.</td>
+                  <td class="prices-table__price">25 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-home-care.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Домашний стационар</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Полноценное лечение в домашних условиях под наблюдением врача.</td>
+                  <td class="prices-table__price">35 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div
+          class="prices__panel"
+          role="tabpanel"
+          id="prices-panel-clinic"
+          aria-labelledby="prices-tab-clinic"
+          hidden
+          data-prices-panel
+        >
+          <div class="prices-table-wrap">
+            <table class="prices-table">
+              <caption class="visually-hidden">Цены на стационарные услуги</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Услуга</th>
+                  <th scope="col">Описание</th>
+                  <th scope="col">Цена</th>
+                  <th scope="col"><span class="visually-hidden">Действие</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-consult.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Консультация нарколога</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Очный приём психиатра-нарколога с рекомендациями по лечению.</td>
+                  <td class="prices-table__price">4 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-consult.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Консультация психиатра</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Консультация психиатра по состоянию и дальнейшей терапии.</td>
+                  <td class="prices-table__price">5 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-drip.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Амбулаторный вывод из запоя</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Вывод из запоя в клинике без круглосуточного пребывания.</td>
+                  <td class="prices-table__price">6 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-coding.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Кодирование «Эспераль»</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Медикаментозное кодирование препаратом «Эспераль» в стационаре.</td>
+                  <td class="prices-table__price">6 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-bed.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Палата общая и лечение Алко</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Лечение алкоголизма в общей палате под контролем специалистов.</td>
+                  <td class="prices-table__price">7 500&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-bed.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Палата комфорт и лечение Алко</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Лечение в палате повышенной комфортности с индивидуальным уходом.</td>
+                  <td class="prices-table__price">10 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-drip-strong.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Экстренное вытрезвление амбулаторно</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Срочное купирование интоксикации в клинике в амбулаторном режиме.</td>
+                  <td class="prices-table__price">10 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-coding.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Кодирование «Дисульфирам»</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Кодирование препаратом «Дисульфирам» после осмотра врача.</td>
+                  <td class="prices-table__price">13 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="prices-table__service">
+                      <img
+                        class="prices-table__icon"
+                        src="assets/images/prices/price-vip.webp"
+                        alt=""
+                        width="128"
+                        height="128"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                      <span class="prices-table__name">Палата ВИП</span>
+                    </div>
+                  </td>
+                  <td class="prices-table__desc">Индивидуальная VIP-палата с максимальным комфортом и вниманием.</td>
+                  <td class="prices-table__price">15 000&nbsp;₽</td>
+                  <td class="prices-table__action">
+                    <a class="button button--price" href="tel:+79034110003">Заказать</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="assets/js/main.js"></script>
