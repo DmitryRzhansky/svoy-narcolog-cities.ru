@@ -5,12 +5,39 @@
 }
 
 .services__title {
-  margin: 0 0 1.35rem;
+  margin: 0 0 1rem;
   font-size: clamp(2rem, 7vw, 2.7rem);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+
+.services__lead {
+  max-width: 42rem;
+  margin: 0 0 1.35rem;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.services__lead-call {
+  display: block;
+  margin-top: 0.35em;
+  white-space: nowrap;
+}
+
+.services__lead-phone {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  white-space: nowrap;
+}
+
+.services__lead-phone:hover {
+  opacity: 0.9;
 }
 
 .services__list {
