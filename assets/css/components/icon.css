@@ -129,6 +129,16 @@
   mask-image: url("../../icons/chat-text.svg");
 }
 
+.icon--chat-circle {
+  -webkit-mask-image: url("../../icons/chat-circle.svg");
+  mask-image: url("../../icons/chat-circle.svg");
+}
+
+.icon--arrow-up-simple {
+  -webkit-mask-image: url("../../icons/arrow-up.svg");
+  mask-image: url("../../icons/arrow-up.svg");
+}
+
 .icon--send {
   -webkit-mask-image: url("../../icons/paper-plane-tilt.svg");
   mask-image: url("../../icons/paper-plane-tilt.svg");

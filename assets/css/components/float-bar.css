@@ -1,0 +1,341 @@
+.float-bar {
+  --float-size: 3.5rem;
+  --float-gap: 0.75rem;
+  --float-offset: 1rem;
+  --float-bottom: var(--float-offset);
+
+  position: fixed;
+  right: var(--float-offset);
+  bottom: var(--float-bottom);
+  z-index: var(--z-float);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.85rem;
+  pointer-events: none;
+}
+
+body.body--lock .float-bar {
+  display: none;
+}
+
+.float-bar__tip,
+.float-bar__stack,
+.float-bar__btn,
+.float-bar__channel,
+.float-bar__tip-close {
+  pointer-events: auto;
+}
+
+.float-bar__tip {
+  position: absolute;
+  right: calc(100% + 0.75rem);
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: max-content;
+  max-width: min(16.5rem, calc(100vw - 6.5rem));
+  padding: 0.55rem;
+  border: 1px solid rgba(23, 58, 81, 0.1);
+  border-radius: var(--radius-pill);
+  background: var(--color-surface);
+  box-shadow: 0 0.75rem 1.75rem rgba(23, 58, 81, 0.14);
+  color: var(--color-text);
+  transform-origin: right center;
+  animation: float-bar-tip-in 0.35s ease;
+}
+
+.float-bar__tip[hidden] {
+  display: none;
+}
+
+.float-bar__tip-photo {
+  flex: 0 0 auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #eef6fa;
+}
+
+.float-bar__tip-text {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.float-bar__tip-close {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.15rem;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: rgba(23, 58, 81, 0.45);
+  cursor: pointer;
+  transition: color var(--transition-base), background-color var(--transition-base);
+}
+
+.float-bar__tip-close .icon {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.float-bar__tip-close:hover {
+  background: rgba(23, 58, 81, 0.06);
+  color: var(--color-text);
+}
+
+.float-bar__tip-close:focus-visible {
+  outline: 0.15rem solid var(--color-brand);
+  outline-offset: 0.1rem;
+}
+
+.float-bar__stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--float-gap);
+}
+
+.float-bar__chat {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: var(--float-gap);
+}
+
+.float-bar__channels {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: var(--float-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.float-bar__channels[hidden] {
+  display: none;
+}
+
+.float-bar__btn,
+.float-bar__channel {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: var(--float-size);
+  height: var(--float-size);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform var(--transition-base), background-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.float-bar__btn:focus-visible,
+.float-bar__channel:focus-visible {
+  outline: 0.15rem solid var(--color-brand);
+  outline-offset: 0.15rem;
+}
+
+.float-bar__btn:hover,
+.float-bar__channel:hover {
+  transform: translateY(-0.1rem);
+}
+
+.float-bar__btn--chat {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+  box-shadow: 0 0.55rem 1.35rem rgba(225, 6, 19, 0.35);
+}
+
+.float-bar__btn--chat:hover {
+  background: var(--color-accent-hover);
+}
+
+.float-bar__btn--chat .icon {
+  width: 1.45rem;
+  height: 1.45rem;
+}
+
+.float-bar__icon-close {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.6) rotate(-45deg);
+}
+
+.float-bar__chat--open .float-bar__icon-chat {
+  opacity: 0;
+  transform: scale(0.6) rotate(45deg);
+}
+
+.float-bar__chat--open .float-bar__icon-close {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.float-bar__icon-chat,
+.float-bar__icon-close {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.float-bar__waves {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.float-bar__wave {
+  position: absolute;
+  inset: 0;
+  border: 0.12rem solid rgba(225, 6, 19, 0.55);
+  border-radius: 50%;
+  animation: float-bar-wave 2.4s ease-out infinite;
+}
+
+.float-bar__wave:nth-child(2) {
+  animation-delay: 1.2s;
+}
+
+.float-bar__chat--open .float-bar__waves,
+.float-bar__btn--chat[aria-expanded="true"] .float-bar__waves {
+  display: none;
+}
+
+.float-bar__btn--top {
+  background: var(--color-hero);
+  color: var(--color-text-inverse);
+  box-shadow: 0 0.55rem 1.35rem rgba(47, 134, 176, 0.32);
+}
+
+.float-bar__btn--top:hover {
+  background: #28749a;
+}
+
+.float-bar__btn--top[hidden] {
+  display: none;
+}
+
+.float-bar__btn--top .icon {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.float-bar__channel {
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: 0 0.45rem 1.1rem rgba(23, 58, 81, 0.16);
+  animation: float-bar-channel-in 0.25s ease both;
+}
+
+.float-bar__channel img {
+  display: block;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.float-bar__channel .icon {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.float-bar__channel--phone {
+  background: var(--color-brand);
+  color: var(--color-text-inverse);
+}
+
+.float-bar__channels li:nth-child(1) .float-bar__channel {
+  animation-delay: 0.04s;
+}
+
+.float-bar__channels li:nth-child(2) .float-bar__channel {
+  animation-delay: 0.08s;
+}
+
+.float-bar__channels li:nth-child(3) .float-bar__channel {
+  animation-delay: 0.12s;
+}
+
+@keyframes float-bar-wave {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1.85);
+    opacity: 0;
+  }
+}
+
+@keyframes float-bar-tip-in {
+  from {
+    opacity: 0;
+    transform: translateX(0.75rem) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes float-bar-channel-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem) scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (min-width: 48rem) {
+  .float-bar {
+    --float-size: 3.75rem;
+    --float-offset: 1.35rem;
+    --float-gap: 0.85rem;
+  }
+
+  .float-bar__tip {
+    max-width: 18rem;
+    gap: 0.75rem;
+    padding: 0.6rem 0.6rem 0.6rem 0.65rem;
+  }
+
+  .float-bar__tip-photo {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .float-bar__tip-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float-bar__wave,
+  .float-bar__tip,
+  .float-bar__channel {
+    animation: none;
+  }
+
+  .float-bar__btn:hover,
+  .float-bar__channel:hover {
+    transform: none;
+  }
+
+  .float-bar__icon-chat,
+  .float-bar__icon-close {
+    transition: none;
+  }
+}

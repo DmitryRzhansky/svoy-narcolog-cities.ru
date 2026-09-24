@@ -2174,7 +2174,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" data-footer>
       <div class="footer__inner">
         <div class="footer__grid">
           <div class="footer__brand">
@@ -2303,6 +2303,93 @@
         </div>
       </div>
     </footer>
+
+    <div class="float-bar" data-float-bar>
+      <div class="float-bar__stack">
+        <div class="float-bar__chat" data-float-chat>
+          <div class="float-bar__tip" data-float-tip hidden>
+            <img
+              class="float-bar__tip-photo"
+              src="assets/images/doctors/shustov.webp"
+              alt=""
+              width="48"
+              height="48"
+              loading="lazy"
+              decoding="async"
+            >
+            <p class="float-bar__tip-text">Получите бесплатную консультацию</p>
+            <button
+              class="float-bar__tip-close"
+              type="button"
+              aria-label="Закрыть подсказку"
+              data-float-tip-close
+            >
+              <span class="icon icon--close" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <ul class="float-bar__channels" data-float-channels id="float-bar-channels" hidden>
+            <li>
+              <a
+                class="float-bar__channel float-bar__channel--telegram"
+                href="https://t.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Написать в Telegram"
+              >
+                <img src="assets/icons/telegram.svg" alt="" width="24" height="24">
+              </a>
+            </li>
+            <li>
+              <a
+                class="float-bar__channel float-bar__channel--whatsapp"
+                href="https://wa.me/79034110003"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Написать в WhatsApp"
+              >
+                <img src="assets/icons/whatsapp.svg" alt="" width="24" height="24">
+              </a>
+            </li>
+            <li>
+              <a
+                class="float-bar__channel float-bar__channel--phone"
+                href="tel:+79034110003"
+                aria-label="Позвонить"
+              >
+                <span class="icon icon--phone" aria-hidden="true"></span>
+              </a>
+            </li>
+          </ul>
+
+          <button
+            class="float-bar__btn float-bar__btn--chat"
+            type="button"
+            aria-label="Открыть чат"
+            aria-expanded="false"
+            aria-controls="float-bar-channels"
+            data-float-chat-toggle
+          >
+            <span class="float-bar__waves" aria-hidden="true">
+              <span class="float-bar__wave"></span>
+              <span class="float-bar__wave"></span>
+            </span>
+            <span class="icon icon--chat-circle float-bar__icon-chat" aria-hidden="true"></span>
+            <span class="icon icon--close float-bar__icon-close" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <button
+          class="float-bar__btn float-bar__btn--top"
+          type="button"
+          aria-label="Подняться вверх"
+          data-float-top
+          hidden
+        >
+          <span class="icon icon--arrow-up-simple" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
 
     <div class="modal" data-modal="consult" hidden>
       <div
