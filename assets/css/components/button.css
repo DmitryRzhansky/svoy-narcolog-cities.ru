@@ -61,6 +61,16 @@
   transform: rotate(0deg);
 }
 
+.button--hero-secondary .button__arrow {
+  background: #e8eef3;
+  color: var(--color-text);
+}
+
+.button--hero-secondary:hover .button__arrow,
+.button--hero-secondary:focus-visible .button__arrow {
+  background: #d9e3eb;
+}
+
 .button--shine {
   position: relative;
   overflow: hidden;
