@@ -324,6 +324,15 @@
 
 .header__cta {
   width: 100%;
+  min-height: 3.5rem;
+  min-width: 0;
+  padding: 0.3rem 0.3rem 0.3rem 1.15rem;
+  font-size: 0.72rem;
+}
+
+.header__cta .button__arrow {
+  width: 2.75rem;
+  height: 2.75rem;
 }
 
 @media (min-width: 36rem) {
@@ -347,7 +356,7 @@
   .header__bar {
     gap: 1.25rem;
     min-height: 5rem;
-    padding: 0.55rem 0.55rem 0.55rem 0.7rem;
+    padding: 0.55rem 0.85rem 0.55rem 0.7rem;
   }
 
   .header__logo-text {
@@ -477,6 +486,14 @@
   .header__cta {
     width: auto;
     flex: 0 0 auto;
+    min-height: 3.35rem;
+    padding-left: 1.1rem;
+    font-size: 0.7rem;
+  }
+
+  .header__cta .button__arrow {
+    width: 2.55rem;
+    height: 2.55rem;
   }
 }
 

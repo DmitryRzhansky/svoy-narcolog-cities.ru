@@ -61,6 +61,48 @@
   transform: rotate(0deg);
 }
 
+.button--shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.button--shine > * {
+  position: relative;
+  z-index: 1;
+}
+
+.button--shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -70%;
+  z-index: 2;
+  width: 42%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.55) 50%,
+    rgba(255, 255, 255, 0) 70%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  animation: button-shine 3.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes button-shine {
+  0%,
+  45% {
+    left: -70%;
+  }
+
+  100% {
+    left: 130%;
+  }
+}
+
 @media (min-width: 48rem) {
   .button--hero {
     width: auto;
@@ -78,5 +120,10 @@
 @media (prefers-reduced-motion: reduce) {
   .button__arrow .icon {
     transition: none;
+  }
+
+  .button--shine::after {
+    animation: none;
+    display: none;
   }
 }
