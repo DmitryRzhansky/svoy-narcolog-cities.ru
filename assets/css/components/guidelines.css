@@ -1,0 +1,211 @@
+.guidelines {
+  --guidelines-muted: rgba(23, 58, 81, 0.5);
+
+  width: min(calc(100% - 0.75rem), 90rem);
+  margin: 2.25rem auto 1.25rem;
+  color: var(--color-text);
+}
+
+.guidelines__layout {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.guidelines__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.guidelines__title {
+  margin: 0;
+  max-width: 18ch;
+  font-size: clamp(1.85rem, 6.5vw, 2.55rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.guidelines__note {
+  margin: 0;
+  max-width: 24rem;
+  color: var(--guidelines-muted);
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.guidelines__list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.guideline-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 11.5rem;
+  padding: 1.15rem 1.15rem 1.1rem;
+  border-radius: 1.2rem;
+  background: #f3fafc;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 1px rgba(23, 58, 81, 0.08);
+  transition: box-shadow 0.25s ease;
+}
+
+.guideline-card:hover,
+.guideline-card:focus-visible {
+  box-shadow:
+    inset 0 0 0 1px rgba(47, 134, 176, 0.35),
+    0 0.65rem 1.5rem rgba(23, 58, 81, 0.08);
+}
+
+.guideline-card:focus-visible {
+  outline: 0.1875rem solid var(--color-accent);
+  outline-offset: 0.2rem;
+}
+
+.guideline-card__title {
+  margin: 0;
+  max-width: 14ch;
+  font-size: clamp(1.05rem, 2.8vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.guideline-card__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
+.guideline-card__meta {
+  color: var(--guidelines-muted);
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.guideline-card__action {
+  display: grid;
+  place-items: center;
+  width: 2.15rem;
+  height: 2.15rem;
+  border: 1px solid rgba(23, 58, 81, 0.22);
+  border-radius: 50%;
+  color: var(--color-text);
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.guideline-card__action .icon {
+  width: 0.95rem;
+  height: 0.95rem;
+  transform: rotate(-45deg);
+  transition: transform var(--transition-base);
+}
+
+.guideline-card:hover .guideline-card__action,
+.guideline-card:focus-visible .guideline-card__action {
+  border-color: var(--color-hero);
+  background: var(--color-hero);
+  color: var(--color-text-inverse);
+}
+
+.guideline-card:hover .guideline-card__action .icon,
+.guideline-card:focus-visible .guideline-card__action .icon {
+  transform: rotate(0deg);
+}
+
+@media (min-width: 48rem) {
+  .guidelines__layout {
+    grid-template-columns: minmax(16rem, 0.9fr) minmax(0, 1.35fr);
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .guidelines__intro {
+    min-height: 100%;
+  }
+
+  .guidelines__title {
+    font-size: clamp(2.2rem, 3.8vw, 2.9rem);
+  }
+
+  .guidelines__note {
+    margin-top: auto;
+    padding-top: 1.5rem;
+  }
+
+  .guidelines__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+
+  .guideline-card {
+    min-height: 12.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .guidelines {
+    width: min(calc(100% - 1.25rem), 90rem);
+    margin-top: 2.5rem;
+  }
+
+  .guidelines__layout {
+    gap: 2rem;
+  }
+
+  .guidelines__title {
+    max-width: 12ch;
+    font-size: clamp(2.5rem, 3vw, 3.35rem);
+  }
+
+  .guidelines__note {
+    padding-top: 2rem;
+  }
+
+  .guidelines__list {
+    gap: 1rem;
+  }
+
+  .guideline-card {
+    min-height: 13.5rem;
+    padding: 1.3rem 1.3rem 1.2rem;
+    border-radius: 1.35rem;
+  }
+
+  .guideline-card__title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .guidelines__title {
+    font-size: 3.55rem;
+  }
+
+  .guideline-card__title {
+    font-size: 1.35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .guideline-card,
+  .guideline-card__action,
+  .guideline-card__action .icon {
+    transition: none;
+  }
+}
