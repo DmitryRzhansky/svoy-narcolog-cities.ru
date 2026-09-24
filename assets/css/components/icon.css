@@ -82,6 +82,11 @@
   mask-image: url("../../icons/magnifying-glass.svg");
 }
 
+.icon--stethoscope {
+  -webkit-mask-image: url("../../icons/stethoscope.svg");
+  mask-image: url("../../icons/stethoscope.svg");
+}
+
 
 
 .icon--shield {

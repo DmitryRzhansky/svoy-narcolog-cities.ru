@@ -1,0 +1,183 @@
+.doctors {
+  width: min(calc(100% - 0.75rem), 90rem);
+  margin: 2.5rem auto 1.25rem;
+  color: var(--color-text);
+}
+
+.doctors__title {
+  margin: 0 0 1.35rem;
+  font-size: clamp(2rem, 7vw, 2.7rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.doctors__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.doctor-profile {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(23, 58, 81, 0.12);
+  border-radius: 1.35rem;
+  background: #f3fafc;
+}
+
+.doctor-profile__media {
+  margin: 0;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  padding: 0.85rem;
+  background: var(--color-surface);
+  box-sizing: border-box;
+}
+
+.doctor-profile__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.doctor-profile__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1.1rem 1.15rem 1.25rem;
+}
+
+.doctor-profile__name {
+  margin: 0;
+  font-size: clamp(1.05rem, 1rem + 0.2vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.doctor-profile__role {
+  display: grid;
+  grid-template-columns: 1rem minmax(0, 1fr);
+  gap: 0.5rem;
+  align-items: start;
+  margin: 0;
+  color: rgba(23, 58, 81, 0.72);
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.doctor-profile__role-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  color: var(--color-brand);
+}
+
+.doctor-profile--all {
+  position: relative;
+  display: block;
+  min-height: 22rem;
+  border: 0;
+  background: transparent;
+}
+
+.doctor-profile__all-media {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+}
+
+.doctor-profile__all-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.doctor-profile__all-cta {
+  position: absolute;
+  z-index: 1;
+  right: auto;
+  bottom: 1.15rem;
+  left: 1.15rem;
+  width: auto;
+  max-width: calc(100% - 2.3rem);
+  min-height: 3.25rem;
+  min-width: 0;
+  padding: 0.3rem 0.3rem 0.3rem 1rem;
+  font-size: 0.7rem;
+}
+
+.doctor-profile__all-cta .button__arrow {
+  width: 2.55rem;
+  height: 2.55rem;
+}
+
+.doctor-profile__all-cta:focus-visible {
+  outline: 0.1875rem solid var(--color-accent);
+  outline-offset: 0.2rem;
+}
+
+.doctor-profile--all::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(16, 24, 28, 0.12) 0%,
+    rgba(16, 24, 28, 0.08) 42%,
+    rgba(16, 24, 28, 0.35) 100%
+  );
+  pointer-events: none;
+}
+
+@media (min-width: 40rem) {
+  .doctors__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .doctor-profile--all {
+    min-height: 0;
+  }
+}
+
+@media (min-width: 48rem) {
+  .doctors__title {
+    font-size: clamp(2.4rem, 4vw, 3rem);
+  }
+}
+
+@media (min-width: 64rem) {
+  .doctors {
+    width: min(calc(100% - 1.25rem), 90rem);
+  }
+
+  .doctors__title {
+    font-size: clamp(2.8rem, 3.4vw, 3.6rem);
+  }
+
+  .doctors__grid {
+    gap: 1.15rem;
+  }
+
+  .doctor-profile {
+    border-radius: 1.5rem;
+  }
+
+  .doctor-profile__body {
+    padding: 1.2rem 1.2rem 1.35rem;
+  }
+}
