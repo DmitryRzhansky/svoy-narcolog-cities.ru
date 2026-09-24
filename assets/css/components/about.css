@@ -101,36 +101,15 @@
   position: absolute;
   top: 50%;
   z-index: 1;
-  display: grid;
-  place-items: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 50%;
-  background: var(--color-surface);
-  color: var(--about-ink);
-  box-shadow: 0 6px 16px rgba(20, 56, 76, 0.16);
   transform: translateY(-50%);
-}
-
-.about-slider__nav .icon {
-  width: 1.15rem;
-  height: 1.15rem;
 }
 
 .about-slider__nav--prev {
   left: 0.7rem;
 }
 
-.about-slider__nav--prev .icon {
-  transform: rotate(180deg);
-}
-
 .about-slider__nav--next {
   right: 0.7rem;
-}
-
-.about-slider__nav:hover {
-  background: #f4f8fb;
 }
 
 .about__photo {

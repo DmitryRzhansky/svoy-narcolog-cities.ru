@@ -354,10 +354,10 @@
                 aria-hidden="true"
               >
             </div>
-            <button class="about-slider__nav about-slider__nav--prev" type="button" data-slider-prev aria-label="Предыдущее фото">
+            <button class="slider-nav slider-nav--prev about-slider__nav about-slider__nav--prev" type="button" data-slider-prev aria-label="Предыдущее фото">
               <span class="icon icon--arrow" aria-hidden="true"></span>
             </button>
-            <button class="about-slider__nav about-slider__nav--next" type="button" data-slider-next aria-label="Следующее фото">
+            <button class="slider-nav slider-nav--next about-slider__nav about-slider__nav--next" type="button" data-slider-next aria-label="Следующее фото">
               <span class="icon icon--arrow" aria-hidden="true"></span>
             </button>
             <p class="visually-hidden" data-slider-status aria-live="polite"></p>
@@ -1195,12 +1195,31 @@
         </div>
       </section>
 
-      <section class="reviews" aria-labelledby="reviews-title">
+      <section class="reviews" aria-labelledby="reviews-title" data-reviews>
         <div class="reviews__header">
           <h2 class="reviews__title" id="reviews-title"><span class="title-accent">Отзывы</span> наших клиентов</h2>
+          <div class="reviews__controls">
+            <button
+              class="slider-nav slider-nav--prev"
+              type="button"
+              data-reviews-prev
+              aria-label="Предыдущие отзывы"
+            >
+              <span class="icon icon--arrow" aria-hidden="true"></span>
+            </button>
+            <button
+              class="slider-nav slider-nav--next"
+              type="button"
+              data-reviews-next
+              aria-label="Следующие отзывы"
+            >
+              <span class="icon icon--arrow" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
 
-        <ul class="reviews__track" tabindex="0" aria-label="Отзывы пациентов">
+        <div class="reviews__viewport">
+          <ul class="reviews__track" aria-label="Отзывы пациентов" data-reviews-track>
           <li class="reviews__item">
             <article class="review-card">
               <img
@@ -1441,6 +1460,7 @@
             </article>
           </li>
         </ul>
+        </div>
       </section>
 
       <section class="consult-banner" aria-labelledby="consult-banner-title">

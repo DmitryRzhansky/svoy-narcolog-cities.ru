@@ -1,0 +1,47 @@
+.slider-nav {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: 0 6px 16px rgba(20, 56, 76, 0.16);
+  cursor: pointer;
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
+}
+
+.slider-nav .icon {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.slider-nav--prev .icon {
+  transform: rotate(180deg);
+}
+
+.slider-nav:hover,
+.slider-nav:focus-visible {
+  background: var(--color-hero);
+  color: var(--color-text-inverse);
+}
+
+.slider-nav:focus-visible {
+  outline: 0.1875rem solid var(--color-accent);
+  outline-offset: 0.15rem;
+}
+
+.slider-nav:disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slider-nav {
+    transition: none;
+  }
+}

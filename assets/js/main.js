@@ -4,7 +4,7 @@ import { initHeaderScroll } from "./modules/header-scroll.js";
 import { initLightbox } from "./modules/lightbox.js";
 import { initMenu } from "./modules/menu.js";
 import { initPricesTabs } from "./modules/prices-tabs.js";
-import { initReviewsScroll } from "./modules/reviews-scroll.js";
+import { initReviewsSlider } from "./modules/reviews-slider.js";
 import { initSlider } from "./modules/slider.js";
 
 function initApp() {
@@ -13,7 +13,7 @@ function initApp() {
   initDropdowns();
   initSlider();
   initPricesTabs();
-  initReviewsScroll();
+  initReviewsSlider();
   initLightbox();
   initConsultModal();
 }
