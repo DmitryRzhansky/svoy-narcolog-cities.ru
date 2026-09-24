@@ -44,6 +44,7 @@ body {
     scroll-behavior: auto;
   }
 
+  .header__bar::before,
   .header__panel,
   .nav__caret,
   .button,
