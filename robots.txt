@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://svoy-narcolog-cities.ru/sitemap.xml
+Sitemap: https://svoy-narcolog.ru/sitemap.xml
