@@ -85,10 +85,6 @@
   .error-page__panel {
     padding: 2.25rem 2rem 2.35rem;
   }
-
-  .error-page__actions {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

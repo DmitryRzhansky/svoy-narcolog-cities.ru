@@ -1,1 +1,28 @@
 ErrorDocument 404 /404.html
+
+DirectoryIndex index.html index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Remove duplicate slashes
+  RewriteCond %{THE_REQUEST} \s[^?]*//
+  RewriteRule ^(.*)$ https://svoy-narcolog.ru/$1 [R=301,L]
+
+  # www -> non-www
+  RewriteCond %{HTTP_HOST} ^www\.svoy-narcolog\.ru$ [NC]
+  RewriteRule ^(.*)$ https://svoy-narcolog.ru/$1 [R=301,L]
+
+  # Legacy Laravel URLs -> new static structure
+  RewriteRule ^vyvod-iz-zapoya/?$ https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/ [R=301,L]
+  RewriteRule ^narkolog-na-dom/?$ https://svoy-narcolog.ru/uslugi/vyzov-narkologa/ [R=301,L]
+  RewriteRule ^kapelnica-ot-zapoya-i-pohmelya/?$ https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/ [R=301,L]
+  RewriteRule ^kapelnica-na-domu/?$ https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/ [R=301,L]
+  RewriteRule ^kodirovanie-ot-alkogolizma/?$ https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/ [R=301,L]
+  RewriteRule ^privacy-policy/?$ https://svoy-narcolog.ru/politika-konfidencialnosti/ [R=301,L]
+  RewriteRule ^successful/?$ https://svoy-narcolog.ru/ [R=301,L]
+
+  # Add trailing slash for existing directories
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.+[^/])$ https://svoy-narcolog.ru/$1/ [R=301,L]
+</IfModule>

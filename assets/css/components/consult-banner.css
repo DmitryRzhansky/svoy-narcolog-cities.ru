@@ -251,6 +251,25 @@
   height: 1.15rem;
 }
 
+.consult-form__status {
+  margin: 0;
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.consult-form__status--success {
+  background: rgba(24, 169, 109, 0.12);
+  color: #0f7a4d;
+}
+
+.consult-form__status--error {
+  background: rgba(196, 60, 60, 0.1);
+  color: #a12828;
+}
+
 .consult-form__disclaimer {
   margin: 0;
   color: rgba(23, 58, 81, 0.55);
