@@ -185,6 +185,26 @@
   gap: 1rem;
 }
 
+.licenses__legal-block {
+  display: grid;
+  gap: 0.7rem;
+  justify-items: start;
+}
+
+.licenses__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(21, 72, 100, 0.1);
+  color: #154864;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .licenses__legal {
   margin: 0;
   max-width: 38rem;
