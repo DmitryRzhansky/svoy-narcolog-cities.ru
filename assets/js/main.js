@@ -8,11 +8,9 @@ import { initMenu } from "./modules/menu.js";
 import { initPricesTabs } from "./modules/prices-tabs.js";
 import { initCasesSlider } from "./modules/cases-slider.js";
 import { initReviewsSlider } from "./modules/reviews-slider.js";
-import { initSitePassword } from "./modules/site-password.js";
 import { initSlider } from "./modules/slider.js";
 
 function initApp() {
-  initSitePassword();
   initMenu();
   initHeaderScroll();
   initDropdowns();
