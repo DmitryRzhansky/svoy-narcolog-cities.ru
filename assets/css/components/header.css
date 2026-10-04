@@ -239,7 +239,7 @@
   transition: transform var(--transition-base);
 }
 
-.nav__item.is-open .nav__caret {
+.nav__item.is-open > .nav__toggle .nav__caret {
   transform: rotate(180deg);
 }
 
@@ -276,6 +276,87 @@
   width: 1.35rem;
   height: 1.35rem;
   color: var(--color-brand);
+  flex-shrink: 0;
+}
+
+.nav__regions {
+  margin-top: 0.2rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.nav__regions-label {
+  margin: 0;
+  padding: 0.45rem 0.7rem 0.3rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.nav__regions-list {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.nav__subtoggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 0.7rem;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-inverse);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: left;
+  cursor: pointer;
+}
+
+.nav__subtoggle:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.nav__subtoggle:focus-visible {
+  outline: 0.1875rem solid var(--color-brand);
+  outline-offset: 0.125rem;
+}
+
+.nav__subtoggle-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.nav__subitem.is-open > .nav__subtoggle .nav__caret {
+  transform: rotate(180deg);
+}
+
+.nav__subdropdown {
+  display: none;
+  gap: 0.2rem;
+  margin: 0.15rem 0 0.25rem;
+  padding: 0.25rem;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.nav__subitem.is-open > .nav__subdropdown {
+  display: grid;
+}
+
+.nav__subdropdown .nav__dropdown-link {
+  padding-left: 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 400;
 }
 
 .header__tools {
@@ -441,17 +522,17 @@
     pointer-events: none;
   }
 
-  .nav__item:hover .nav__dropdown,
-  .nav__item:focus-within .nav__dropdown,
-  .nav__item.is-open .nav__dropdown {
+  .nav__item:hover > .nav__dropdown,
+  .nav__item:focus-within > .nav__dropdown,
+  .nav__item.is-open > .nav__dropdown {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
 
-  .nav__item:hover .nav__caret,
-  .nav__item:focus-within .nav__caret,
-  .nav__item.is-open .nav__caret {
+  .nav__item:hover > .nav__toggle .nav__caret,
+  .nav__item:focus-within > .nav__toggle .nav__caret,
+  .nav__item.is-open > .nav__toggle .nav__caret {
     transform: rotate(180deg);
   }
 
@@ -462,6 +543,72 @@
 
   .nav__dropdown-link:hover {
     background: rgba(73, 192, 230, 0.14);
+  }
+
+  .nav__regions {
+    border-top-color: rgba(23, 58, 81, 0.12);
+  }
+
+  .nav__regions-label {
+    color: rgba(23, 58, 81, 0.62);
+  }
+
+  .nav__subitem {
+    position: relative;
+  }
+
+  .nav__subitem::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0.5rem;
+    height: 100%;
+  }
+
+  .nav__subtoggle {
+    color: var(--color-text);
+    font-size: 0.95rem;
+  }
+
+  .nav__subtoggle:hover {
+    background: rgba(73, 192, 230, 0.14);
+  }
+
+  .nav__subitem:hover > .nav__subtoggle .nav__caret,
+  .nav__subitem:focus-within > .nav__subtoggle .nav__caret,
+  .nav__subitem.is-open > .nav__subtoggle .nav__caret {
+    transform: rotate(-90deg);
+  }
+
+  .nav__subdropdown {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 0.35rem);
+    z-index: 6;
+    display: grid;
+    min-width: 17.5rem;
+    margin: 0;
+    padding: 0.45rem;
+    background: var(--color-surface);
+    box-shadow: 0 16px 40px rgba(23, 58, 81, 0.16);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .nav__subitem:hover > .nav__subdropdown,
+  .nav__subitem:focus-within > .nav__subdropdown,
+  .nav__subitem.is-open > .nav__subdropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav__subdropdown .nav__dropdown-link {
+    padding-left: 0.7rem;
+    font-size: 0.95rem;
+    font-weight: 500;
   }
 
   .header__tools {

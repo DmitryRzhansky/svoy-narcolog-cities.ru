@@ -6,26 +6,118 @@ export function initDropdowns() {
   }
 
   const desktopQuery = window.matchMedia("(min-width: 64rem)");
+  const viewportGap = 12;
+
+  const getToggle = (item) => item.querySelector(":scope > [data-dropdown-toggle]");
+
+  const getMenu = (item) =>
+    item.querySelector(":scope > .nav__dropdown, :scope > .nav__subdropdown");
+
+  const clearMenuPosition = (menu) => {
+    if (!menu) {
+      return;
+    }
+
+    menu.style.position = "";
+    menu.style.top = "";
+    menu.style.bottom = "";
+    menu.style.left = "";
+    menu.style.right = "";
+  };
+
+  const fitMenuToViewport = (item) => {
+    const menu = getMenu(item);
+
+    if (!menu || !desktopQuery.matches) {
+      return;
+    }
+
+    clearMenuPosition(menu);
+
+    const isSubmenu = menu.classList.contains("nav__subdropdown");
+    const viewportHeight = window.innerHeight;
+    const viewportWidth = window.innerWidth;
+    const rect = menu.getBoundingClientRect();
+
+    if (isSubmenu) {
+      const itemRect = item.getBoundingClientRect();
+      const submenuGap = 6;
+      let top = itemRect.top;
+      let left = itemRect.right + submenuGap;
+
+      if (top + rect.height > viewportHeight - viewportGap) {
+        top = Math.max(viewportGap, viewportHeight - viewportGap - rect.height);
+      }
+
+      if (left + rect.width > viewportWidth - viewportGap) {
+        left = Math.max(viewportGap, itemRect.left - rect.width - submenuGap);
+      }
+
+      menu.style.position = "fixed";
+      menu.style.top = `${top}px`;
+      menu.style.left = `${left}px`;
+      menu.style.right = "auto";
+      menu.style.bottom = "auto";
+      return;
+    }
+
+    const overflowBottom = rect.bottom - (viewportHeight - viewportGap);
+
+    if (overflowBottom > 0) {
+      menu.style.top = `calc(100% + 0.85rem - ${overflowBottom}px)`;
+    }
+  };
 
   const setOpen = (item, open) => {
     item.classList.toggle("is-open", open);
-    const button = item.querySelector("[data-dropdown-toggle]");
+
+    const button = getToggle(item);
 
     if (button) {
       button.setAttribute("aria-expanded", String(open));
     }
+
+    if (!open) {
+      clearMenuPosition(getMenu(item));
+
+      item.querySelectorAll("[data-dropdown].is-open").forEach((nested) => {
+        nested.classList.remove("is-open");
+
+        const nestedButton = getToggle(nested);
+
+        if (nestedButton) {
+          nestedButton.setAttribute("aria-expanded", "false");
+        }
+
+        clearMenuPosition(getMenu(nested));
+      });
+
+      return;
+    }
+
+    window.requestAnimationFrame(() => {
+      fitMenuToViewport(item);
+    });
   };
 
-  const closeAll = (except) => {
+  const closeConflicting = (except) => {
     items.forEach((item) => {
-      if (item !== except) {
-        setOpen(item, false);
+      if (item === except || item.contains(except)) {
+        return;
       }
+
+      setOpen(item, false);
+    });
+  };
+
+  const closeAll = () => {
+    items.forEach((item) => {
+      setOpen(item, false);
     });
   };
 
   items.forEach((item) => {
-    const button = item.querySelector("[data-dropdown-toggle]");
+    const button = getToggle(item);
     let closeTimer = 0;
 
     if (!button) {
@@ -34,7 +126,7 @@ export function initDropdowns() {
 
     const openItem = () => {
       window.clearTimeout(closeTimer);
-      closeAll(item);
+      closeConflicting(item);
       setOpen(item, true);
     };
 
@@ -47,7 +139,7 @@ export function initDropdowns() {
 
     button.addEventListener("click", () => {
       const willOpen = !item.classList.contains("is-open");
-      closeAll(item);
+      closeConflicting(item);
       setOpen(item, willOpen);
     });
 
@@ -93,4 +185,21 @@ export function initDropdowns() {
 
     closeAll();
   });
+
+  window.addEventListener(
+    "resize",
+    () => {
+      if (!desktopQuery.matches) {
+        items.forEach((item) => clearMenuPosition(getMenu(item)));
+        return;
+      }
+
+      items.forEach((item) => {
+        if (item.classList.contains("is-open")) {
+          fitMenuToViewport(item);
+        }
+      });
+    },
+    { passive: true },
+  );
 }
