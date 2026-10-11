@@ -21,7 +21,7 @@
 }
 
 .geography__lead {
-  max-width: 38rem;
+  max-width: 42rem;
   margin: 0 0 1.5rem;
   color: rgba(23, 58, 81, 0.72);
   font-size: 0.98rem;
@@ -50,6 +50,29 @@
 .geography__cities > li {
   display: flex;
   width: 100%;
+  min-width: 0;
+}
+
+/* Districts / places: full-width 3-column grid, no map */
+.geography--districts .geography__layout {
+  display: block;
+  width: 100%;
+}
+
+.geography--districts .geography__cities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  width: 100%;
+  height: auto;
+  align-self: auto;
+  gap: 0.75rem;
+}
+
+.geography--districts .geography__cities > li {
+  flex: none;
+  width: auto;
+  height: auto;
+  min-height: 0;
 }
 
 .geography__place,
@@ -168,6 +191,7 @@
     padding: 1.75rem 1.75rem 2rem;
     border-radius: 1.75rem;
   }
+
 }
 
 @media (min-width: 64rem) {
@@ -176,30 +200,42 @@
     border-radius: var(--radius-lg);
   }
 
-  .geography__layout {
+  /* Oblast hub: cities + map */
+  .geography:not(.geography--districts) .geography__layout {
     grid-template-columns: minmax(14rem, 0.85fr) minmax(0, 1.35fr);
     align-items: stretch;
     gap: 1.5rem;
     min-height: 28rem;
   }
 
-  .geography__cities {
+  .geography:not(.geography--districts) .geography__cities {
+    display: flex;
+    flex-direction: column;
     align-self: stretch;
     height: 100%;
     gap: 0.75rem;
   }
 
-  .geography__cities > li {
+  .geography:not(.geography--districts) .geography__cities > li {
     flex: 1 1 0;
     min-height: 0;
   }
 
-  .geography__place,
-  .geography__city-link {
+  .geography:not(.geography--districts) .geography__city-link {
     flex: 1;
     height: 100%;
     min-height: 3.15rem;
     padding: 0.45rem 0.45rem 0.45rem 0.85rem;
+  }
+
+  .geography--districts .geography__cities {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem 1rem;
+  }
+
+  .geography--districts .geography__place {
+    min-height: 3.15rem;
+    padding: 0.55rem 0.85rem;
   }
 
   .geography__city-arrow {
