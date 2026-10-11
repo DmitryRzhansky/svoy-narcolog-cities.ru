@@ -52,6 +52,7 @@
   width: 100%;
 }
 
+.geography__place,
 .geography__city-link {
   display: flex;
   align-items: center;
@@ -67,10 +68,18 @@
   font-weight: 500;
   line-height: 1.2;
   text-decoration: none;
+  box-sizing: border-box;
+}
+
+.geography__city-link {
   transition:
     background-color var(--transition-base),
     border-color var(--transition-base),
     color var(--transition-base);
+}
+
+.geography__place {
+  cursor: default;
 }
 
 .geography__city-link:hover {
@@ -185,6 +194,7 @@
     min-height: 0;
   }
 
+  .geography__place,
   .geography__city-link {
     flex: 1;
     height: 100%;
