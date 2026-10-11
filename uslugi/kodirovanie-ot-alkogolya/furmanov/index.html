@@ -142,13 +142,12 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Кодирование от алкоголя",
-          "item": "https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/"
+          "name": "Фурманов"
         },
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "Фурманов",
+          "name": "Кодирование от алкоголя",
           "item": "https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/furmanov/"
         }
       ]
@@ -415,19 +414,7 @@
   ]
 }
     </script>
-      <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112969766', 'ym');
 
-      ym(112969766, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/112969766" style="position:absolute; left:-9999px;" alt=""></div></noscript>
-    <!-- /Yandex.Metrika counter -->
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       (function(m,e,t,r,i,k,a){
@@ -823,7 +810,7 @@
       <section class="hero hero--service" aria-labelledby="hero-title">
         <div class="hero__layout">
           <div class="hero__content">
-                        <nav class="hero__breadcrumbs" aria-label="Хлебные крошки">
+                                    <nav class="hero__breadcrumbs" aria-label="Хлебные крошки">
               <ol class="hero__breadcrumbs-list">
                 <li class="hero__breadcrumbs-item">
                   <a class="hero__breadcrumbs-link" href="/">Главная</a>
@@ -832,10 +819,10 @@
                   <a class="hero__breadcrumbs-link" href="/uslugi/">Услуги</a>
                 </li>
                 <li class="hero__breadcrumbs-item">
-                  <a class="hero__breadcrumbs-link" href="/uslugi/kodirovanie-ot-alkogolya/">Кодирование от алкоголя</a>
+                  <span class="hero__breadcrumbs-city">Фурманов</span>
                 </li>
                 <li class="hero__breadcrumbs-item">
-                  <span class="hero__breadcrumbs-current">Фурманов</span>
+                  <span class="hero__breadcrumbs-current">Кодирование от алкоголя</span>
                 </li>
               </ol>
             </nav>
@@ -1015,7 +1002,6 @@
           </li>
         </ul>
       </section>
-
 
 <section class="geography" aria-labelledby="geography-title">
         <h2 class="geography__title" id="geography-title">
@@ -2104,7 +2090,6 @@
         </ul>
       </section>
 
-
 <section class="reviews" aria-labelledby="reviews-title" data-reviews>
         <div class="reviews__header">
           <h2 class="reviews__title" id="reviews-title"><span class="title-accent">Отзывы</span> наших клиентов</h2>
@@ -2273,7 +2258,6 @@
       </section>
 
       
-
 
 <section class="cases" aria-labelledby="cases-title" data-cases>
         <div class="cases__header">
@@ -3456,5 +3440,11 @@
     <script type="module" src="../../../assets/js/main.js"></script>
 
     <script type="module" src="../../../assets/js/main.js"></script>
+      <script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest('a[href^="tel:"]');
+  if (a) ym(113058828, 'reachGoal', 'call_click');
+});
+</script>
   </body>
 </html>

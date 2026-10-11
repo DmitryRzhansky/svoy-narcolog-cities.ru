@@ -102,6 +102,10 @@
   text-decoration: underline;
 }
 
+.hero__breadcrumbs-city {
+  color: inherit;
+}
+
 .hero__breadcrumbs-current {
   color: var(--color-text-inverse);
 }
