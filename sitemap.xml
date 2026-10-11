@@ -19,10 +19,20 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://svoy-narcolog.ru/uslugi/vyzov-narkologa/oblast/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/oblast/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/</loc>
@@ -31,127 +41,137 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/oblast/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/vyzov-narkologa/furmanov/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/oblast/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://svoy-narcolog.ru/uslugi/vyzov-narkologa/oblast/furmanov/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/vyzov-narkologa/kineshma/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/vyzov-narkologa/oblast/kineshma/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/vyzov-narkologa/kokhma/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/vyzov-narkologa/oblast/kokhma/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/vyzov-narkologa/privolzhsk/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/vyzov-narkologa/oblast/privolzhsk/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/vyzov-narkologa/shuya/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/vyzov-narkologa/oblast/shuya/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/furmanov/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/oblast/furmanov/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/kineshma/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/oblast/kineshma/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/kokhma/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/oblast/kokhma/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/privolzhsk/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/oblast/privolzhsk/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/shuya/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/vyvod-iz-zapoya/oblast/shuya/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/furmanov/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/oblast/furmanov/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/kineshma/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/oblast/kineshma/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/kokhma/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/oblast/kokhma/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/privolzhsk/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/oblast/privolzhsk/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/shuya/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/kapelnitsa-ot-zapoya/oblast/shuya/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/furmanov/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/oblast/furmanov/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/kineshma/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/oblast/kineshma/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/kokhma/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/oblast/kokhma/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/privolzhsk/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/oblast/privolzhsk/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/shuya/</loc>
+    <loc>https://svoy-narcolog.ru/uslugi/kodirovanie-ot-alkogolya/oblast/shuya/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -22,6 +22,9 @@ DirectoryIndex index.html index.php
   RewriteRule ^privacy-policy/?$ https://svoy-narcolog.ru/politika-konfidencialnosti/ [R=301,L]
   RewriteRule ^successful/?$ https://svoy-narcolog.ru/ [R=301,L]
 
+  # City pages -> under /oblast/
+  RewriteRule ^uslugi/(vyzov-narkologa|kapelnitsa-ot-zapoya|vyvod-iz-zapoya|kodirovanie-ot-alkogolya)/(shuya|kineshma|kokhma|furmanov|privolzhsk)/?$ https://svoy-narcolog.ru/uslugi/$1/oblast/$2/ [R=301,L]
+
   # Add trailing slash for existing directories
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^(.+[^/])$ https://svoy-narcolog.ru/$1/ [R=301,L]
